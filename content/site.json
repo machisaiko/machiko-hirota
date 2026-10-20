@@ -1,0 +1,64 @@
+{
+  "_comment": "Identity, contact links, photo and SEO settings. Empty strings are unset and are simply not rendered (the build prints a warning for each).",
+
+  "site": {
+    "noindex": true,
+    "url": "https://baileyeet.github.io/machiko-hirota",
+    "photo": "profile.jpg",
+    "photoCaption": { "en": "Machiko Hirota", "ja": "廣田 真知子" },
+    "year": 2026
+  },
+
+  "identity": {
+    "en": { "name": "Machiko Hirota", "subtitle": "" },
+    "ja": { "name": "廣田 真知子", "subtitle": "" }
+  },
+
+  "contact": {
+    "email": "",
+    "scholar": "",
+    "github": ""
+  },
+
+  "meta": {
+    "en": {
+      "description": "Machiko Hirota is a machine learning researcher at Liquid AI, working on multilingual and multimodal machine learning. Research interests include AI safety and evaluation, multi-agent systems, ethics and governance, and multilingual NLP.",
+      "keywords": "Machiko Hirota, machine learning, AI safety, evaluation, multi-agent systems, multilingual NLP, computational linguistics, AI governance"
+    },
+    "ja": {
+      "description": "廣田真知子は Liquid AI の機械学習研究者です。AIの安全性と評価、マルチエージェントシステム、AIの倫理・ガバナンス、多言語自然言語処理に関心があります。",
+      "keywords": "廣田真知子, 機械学習, AI安全性, 評価, マルチエージェントシステム, 多言語自然言語処理, 計算言語学, AIガバナンス"
+    }
+  },
+
+  "ui": {
+    "en": {
+      "email": "Email",
+      "scholar": "Google Scholar",
+      "github": "GitHub",
+      "switchLanguage": "日本語",
+      "research": "Research",
+      "publications": "Publications",
+      "ongoing": "Ongoing Research",
+      "projects": "Projects",
+      "writing": "Blog Posts",
+      "talks": "Talks",
+      "funding": "Funding & Support",
+      "skipToContent": "Skip to content"
+    },
+    "ja": {
+      "email": "メール",
+      "scholar": "Google Scholar",
+      "github": "GitHub",
+      "switchLanguage": "English",
+      "research": "研究",
+      "publications": "論文",
+      "ongoing": "進行中の研究",
+      "projects": "プロジェクト",
+      "writing": "ブログ記事",
+      "talks": "発表",
+      "funding": "助成・支援",
+      "skipToContent": "本文へ"
+    }
+  }
+}

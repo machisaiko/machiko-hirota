@@ -1,0 +1,192 @@
+/* ------------------------------------------------------------------
+   Minimalist academic homepage. One stylesheet, no frameworks.
+   Colour and spacing tokens live at the top; everything else uses them.
+   ------------------------------------------------------------------ */
+
+:root {
+  --portrait-size: 150px;
+  --bg: #fdfcfa;
+  --text: #1f1d1a;
+  --muted: #6b6560;
+  --rule: #e6e1d9;
+  --link: #3f6b8f;
+  --link-hover: #24506f;
+  --measure: 46rem; /* ~780px content column */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic",
+    "Noto Sans JP", Meiryo, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0 1.5rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Japanese benefits from a slightly looser line and no italics. */
+html[lang="ja"] body { line-height: 1.85; font-size: 1rem; }
+html[lang="ja"] em { font-style: normal; }
+
+.wrap { max-width: var(--measure); margin: 0 auto; padding: 4.5rem 0 4rem; }
+
+a { color: var(--link); text-decoration: none; border-bottom: 1px solid rgba(63, 107, 143, 0.28); }
+a:hover { color: var(--link-hover); border-bottom-color: currentColor; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+
+.skip-link {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--bg); padding: 0.5rem 0.75rem; border: 1px solid var(--rule);
+}
+.skip-link:focus { left: 0; }
+
+/* --- Header ------------------------------------------------------- */
+
+/* Photo and name sit side by side as one block, centred on the page; the
+   introduction below runs full width. */
+.masthead {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+  margin-bottom: 2.75rem;
+}
+.masthead-text { text-align: center; }
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.subtitle { margin: 0.35rem 0 0; color: var(--muted); font-size: 1.0625rem; }
+
+.contact {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 0.9375rem;
+}
+.contact li + li::before {
+  content: "·";
+  color: var(--muted);
+  margin: 0 0.6rem;
+}
+
+.portrait { width: var(--portrait-size); }
+/* Width and height are both fixed here, so the image needs no width/height
+   attributes to reserve its space — change the size in one place above. */
+.portrait img {
+  display: block;
+  width: var(--portrait-size); height: var(--portrait-size);
+  object-fit: cover;
+  border-radius: 50%;
+}
+.portrait-placeholder {
+  width: var(--portrait-size); height: var(--portrait-size);
+  border-radius: 50%;
+  border: 1px dashed var(--rule);
+  background: #f4f1eb;
+}
+
+/* --- Sections ----------------------------------------------------- */
+
+.intro p { margin: 0 0 1.05rem; }
+.intro p:last-child { margin-bottom: 0; }
+.intro ul { margin: -0.5rem 0 1.15rem; padding-left: 1.25rem; }
+.intro li { margin: 0 0 0.2rem; }
+.intro li::marker { color: var(--muted); }
+
+section { margin-top: 3.25rem; }
+
+h2 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+html[lang="ja"] h2 { letter-spacing: 0.08em; text-transform: none; }
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 2.25rem 0 1.1rem;
+  color: var(--text);
+}
+h3:first-of-type { margin-top: 0; }
+
+/* --- Entries ------------------------------------------------------ */
+
+.entries { margin: 0; padding: 0; list-style: none; }
+.entry { margin: 0 0 1.5rem; }
+.entry:last-child { margin-bottom: 0; }
+
+.entry-title { font-weight: 500; }
+.entry-authors,
+.entry-venue,
+.entry-meta,
+.entry-note { color: var(--muted); font-size: 0.9375rem; }
+.entry-authors .me { color: var(--text); font-weight: 600; }
+.entry-note { margin-top: 0.15rem; }
+
+.entry-links { font-size: 0.9375rem; margin-top: 0.15rem; }
+.entry-links a { margin-right: 0.75rem; border-bottom: none; }
+.entry-links a:hover { border-bottom: 1px solid currentColor; }
+
+.funding { margin: 0; padding: 0; list-style: none; }
+.funding li { margin-bottom: 0.5rem; }
+.funding .year { color: var(--muted); }
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* --- Small screens ------------------------------------------------ */
+
+@media (max-width: 34rem) {
+  body { padding: 0 1.25rem; font-size: 1rem; }
+  .wrap { padding: 2.75rem 0 2.5rem; }
+  :root { --portrait-size: 120px; }
+  .masthead {
+    grid-template-columns: auto;
+    justify-items: center;
+    column-gap: 0;
+    row-gap: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  h1 { font-size: 1.45rem; }
+  section { margin-top: 2.5rem; }
+}
+
+@media print {
+  body { background: #fff; }
+  a { color: inherit; border-bottom: none; }
+}

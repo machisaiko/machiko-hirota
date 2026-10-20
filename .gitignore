@@ -1,0 +1,10 @@
+dist/
+.DS_Store
+node_modules/
+
+# Private working notes, not part of the published project
+TODO.md
+
+# Loose source files kept locally (the site ships the derived copies in assets/)
+/*.pdf
+/*.PNG.png

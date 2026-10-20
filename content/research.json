@@ -1,0 +1,140 @@
+{
+  "_comment": [
+    "All research content lives here. Every entry has parallel `en` / `ja` fields so the two",
+    "language versions stay in sync.",
+    "",
+    "  draft: true   -> the entry is NOT rendered on the site (use for work whose title or",
+    "                   author list is not final yet). The build prints a reminder for each one.",
+    "  todo:         -> a private note for you. It is never rendered on the page.",
+    "  title.url     -> optional; when present the title becomes a link.",
+    "  links[]       -> small inline text links, e.g. [Paper] [Code] [Demo]. Omit when no real URL exists.",
+    "",
+    "Ordering on the page follows the order of the arrays below."
+  ],
+
+  "authorHighlight": "Machiko Hirota",
+
+  "publications": [
+    {
+      "id": "chimera-states",
+      "title": "Collective Regimes in Multi-Agent LLMs Under Reasoning Effort and Communication Topology",
+      "url": "https://arxiv.org/abs/2609.35885",
+      "authors": ["Machiko Hirota", "Akshara Nadayanur Sathis Kanna*", "Ujwal Kumar*", "Phan Xuan Tan"],
+      "venue": {
+        "en": "Preprint",
+        "ja": "プレプリント"
+      },
+      "links": []
+    },
+    {
+      "id": "iclr-2027-second",
+      "title": "Beyond In-Task Accuracy: Evaluating Task-Specialized Memory under Relevance Shifts",
+      "url": "",
+      "authors": ["Ujwal Kumar", "Takehiro Takayanagi", "Machiko Hirota", "Phan Xuan Tan"],
+      "links": []
+    },
+    {
+      "id": "constitutional-arms-races",
+      "title": "Constitutional Arms Races in the Public Goods Game: Co-Evolving LLM Constitutions Under Cooperation-Defection Pressure",
+      "url": "https://arxiv.org/abs/2605.26448",
+      "authors": [
+        "Ujwal Kumar",
+        "Arth Singh",
+        "Hershraj Niranjani",
+        "Machiko Hirota",
+        "Takehiro Takayanagi",
+        "Alice Saito",
+        "Eiji Kamioka",
+        "Phan Xuan Tan"
+      ],
+      "venue": {
+        "en": "Preprint",
+        "ja": "プレプリント"
+      },
+      "links": []
+    },
+    {
+      "id": "gender-bias-hiring",
+      "title": "Gender Bias in LLM Hiring Decisions: Evidence from a Japanese Context and Evaluation of Mitigation Strategies",
+      "url": "https://arxiv.org/abs/2606.18649",
+      "authors": [
+        "Serena A. Hoffstedde",
+        "Machiko Hirota",
+        "Akshara Nadayanur Sathis Kanna",
+        "Rihito Kotani",
+        "Ujwal Kumar",
+        "Gabriele Trovato",
+        "Phan Xuan Tan"
+      ],
+      "venue": {
+        "en": "BIAS Workshop, ECML PKDD 2026",
+        "ja": "ECML PKDD 2026 BIAS ワークショップ"
+      },
+      "links": []
+    }
+  ],
+
+  "ongoing": [],
+
+  "projects": [],
+
+  "writing": [
+    {
+      "id": "wav2vec2-japanese",
+      "title": {
+        "en": "大規模日本語音声による事前学習モデルWav2Vec2を公開",
+        "ja": "大規模日本語音声による事前学習モデルWav2Vec2を公開"
+      },
+      "url": "https://hilab.jp/blog/%E5%A4%A7%E8%A6%8F%E6%A8%A1%E6%97%A5%E6%9C%AC%E8%AA%9E%E9%9F%B3%E5%A3%B0%E3%81%AB%E3%82%88%E3%82%8B%E4%BA%8B%E5%89%8D%E5%AD%A6%E7%BF%92%E3%83%A2%E3%83%87%E3%83%ABwav2vec2%E3%82%92%E5%85%AC%E9%96%8B",
+      "meta": { "en": "Reazon Human Interaction Lab", "ja": "Reazon Human Interaction Lab" }
+    },
+    {
+      "id": "reazonspeech-v21",
+      "title": {
+        "en": "ReazonSpeech v2.1: Setting a New Standard in Japanese ASR",
+        "ja": "ReazonSpeech v2.1: Setting a New Standard in Japanese ASR"
+      },
+      "url": "https://hilab.jp/blog/reazonspeech-v21-setting-a-new-standard-in-japanese-asr",
+      "meta": { "en": "Reazon Human Interaction Lab", "ja": "Reazon Human Interaction Lab" }
+    }
+  ],
+
+  "talks": [
+    {
+      "id": "talk-bias-ecml-2026",
+      "title": {
+        "en": "Gender Bias in LLM Hiring Decisions: Evidence from a Japanese Context and Evaluation of Mitigation Strategies",
+        "ja": "Gender Bias in LLM Hiring Decisions: Evidence from a Japanese Context and Evaluation of Mitigation Strategies"
+      },
+      "url": "",
+      "meta": {
+        "en": "BIAS Workshop, ECML PKDD 2026",
+        "ja": "ECML PKDD 2026 BIAS ワークショップ"
+      },
+      "links": [
+        { "label": { "en": "Slides", "ja": "スライド" }, "url": "files/gender-bias-llm-hiring-bias-ecml-2026.pdf" }
+      ]
+    }
+  ],
+
+  "funding": [
+    {
+      "name": { "en": "BlueDot Impact — Career Transition Grant", "ja": "BlueDot Impact — Career Transition Grant（キャリア移行助成）" },
+      "year": "2026",
+      "url": ""
+    },
+    {
+      "name": { "en": "grantmaking.ai — Research Grant", "ja": "grantmaking.ai — 研究助成" },
+      "year": "2026",
+      "url": ""
+    },
+    {
+      "name": {
+        "en": "Machine Intelligence Research Institute (MIRI) — Technical Governance Research Fellowship",
+        "ja": "Machine Intelligence Research Institute (MIRI) — テクニカル・ガバナンス研究フェローシップ"
+      },
+      "year": "2026",
+      "url": ""
+    }
+  ]
+}

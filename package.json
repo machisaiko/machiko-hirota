@@ -1,0 +1,9 @@
+{
+  "name": "personal-website",
+  "private": true,
+  "description": "Personal research homepage (English / Japanese). Static, no dependencies.",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "node build.js --serve"
+  }
+}
