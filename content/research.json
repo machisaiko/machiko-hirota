@@ -16,21 +16,21 @@
 
   "publications": [
     {
+      "id": "iclr-2027-second",
+      "title": "Beyond In-Task Accuracy: Evaluating Task-Specialized Memory under Relevance Shifts",
+      "url": "",
+      "authors": ["Ujwal Kumar", "Takehiro Takayanagi", "Machiko Hirota", "Phan Xuan Tan"],
+      "links": []
+    },
+    {
       "id": "chimera-states",
-      "title": "Collective Regimes in Multi-Agent LLMs Under Reasoning Effort and Communication Topology",
+      "title": "Local Agreement Does Not Imply Global Consensus in LLM Panels",
       "url": "https://arxiv.org/abs/2609.35885",
       "authors": ["Machiko Hirota", "Akshara Nadayanur Sathis Kanna*", "Ujwal Kumar*", "Phan Xuan Tan"],
       "venue": {
         "en": "Preprint",
         "ja": "プレプリント"
       },
-      "links": []
-    },
-    {
-      "id": "iclr-2027-second",
-      "title": "Beyond In-Task Accuracy: Evaluating Task-Specialized Memory under Relevance Shifts",
-      "url": "",
-      "authors": ["Ujwal Kumar", "Takehiro Takayanagi", "Machiko Hirota", "Phan Xuan Tan"],
       "links": []
     },
     {
