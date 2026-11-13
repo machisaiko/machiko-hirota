@@ -4,6 +4,7 @@
    ------------------------------------------------------------------ */
 
 :root {
+  color-scheme: light;
   --portrait-size: 150px;
   --bg: #fdfcfa;
   --text: #1f1d1a;
@@ -11,10 +12,28 @@
   --rule: #e6e1d9;
   --link: #3f6b8f;
   --link-hover: #24506f;
+  --link-underline: rgba(63, 107, 143, 0.28);
+  --portrait-bg: #f4f1eb;
   --measure: 46rem; /* ~780px content column */
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
     Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic",
     "Noto Sans JP", Meiryo, sans-serif;
+}
+
+/* Follow the visitor's device appearance, including scheduled changes.
+   Keep this screen-only so printed pages retain the light palette. */
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #18191b;
+    --text: #edeae6;
+    --muted: #b8b2aa;
+    --rule: #3a3a3c;
+    --link: #a7cbed;
+    --link-hover: #d2e6f9;
+    --link-underline: rgba(167, 203, 237, 0.38);
+    --portrait-bg: #242426;
+  }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -40,7 +59,7 @@ html[lang="ja"] em { font-style: normal; }
 
 .wrap { max-width: var(--measure); margin: 0 auto; padding: 4.5rem 0 4rem; }
 
-a { color: var(--link); text-decoration: none; border-bottom: 1px solid rgba(63, 107, 143, 0.28); }
+a { color: var(--link); text-decoration: none; border-bottom: 1px solid var(--link-underline); }
 a:hover { color: var(--link-hover); border-bottom-color: currentColor; }
 a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
 
@@ -103,7 +122,7 @@ h1 {
   width: var(--portrait-size); height: var(--portrait-size);
   border-radius: 50%;
   border: 1px dashed var(--rule);
-  background: #f4f1eb;
+  background: var(--portrait-bg);
 }
 
 /* --- Sections ----------------------------------------------------- */
