@@ -8,11 +8,8 @@ University of Pennsylvania.
 I also have a software engineering background and worked on low-level optimization
 and computer vision algorithms at NVIDIA.
 
-My research interests include:
-
-* AI safety and evaluation, especially multilingual and cross-cultural settings
-* Multi-agent systems and the social dynamics of LLM agents
-* Ethics, bias, and governance of AI systems
-* Computational linguistics and multilingual NLP (speech and text)
+My research interests include machine learning methods for improving model
+capabilities, reliability, and safety, alongside the societal implications and
+governance of AI.
 
 I'm based in Tokyo but visit the US (mostly San Francisco) sometimes :)
